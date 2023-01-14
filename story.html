@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/logo.png" />
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>قصتنا</title>
+  </head>
+  <body>
+    <!-- Start Landing -->
+    <div class="story">
+      <div class="header">
+        <img src="images/bar.png" alt="" id="barIcon" />
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="index.html#howUs">من نحن</a></li>
+          <li><a href="index.html#clients">العملاء</a></li>
+          <li><a href="business.html">أعمالنا</a></li>
+          <li><a href="index.html#services">خدمات النجومية</a></li>
+          <li><a href="blogs.html" class="active">المقالات</a></li>
+          <li><a href="studies.html">الدراسات</a></li>
+          <li><a href="holfaa.html">حلفاؤنا</a></li>
+          <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+      </div>
+
+      <!-- Start Section -->
+      <div class="container">
+        <div class="box">
+          <h1>قصتنا</h1>
+          <div class="image">
+            <img src="images/contact-us-image.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h2>الشغف، الفرصة، النجومية..</h2>
+            <p>
+              النجومية هي "فرصة" ربما تحصل عليها مرة في العمر، ولكن، مالذي يجعل
+              من الشخص العادي "نجماً"، نحن في شركة النجومية اكتشفنا أنه "الشغف"،
+              بالطبع مثلما سمعت، أو كما يقول الباريسيون "la passion"،إذا كان
+              لديك "الشغف" فأنت حتما نجما، وأنت بالطبع جمهورنا، وسنقدم لك "فرصة"
+              عليك استغلالها. نحن شركة النجومية للأعمال ، نسعى للتميز، نسعى لخلق
+              نجوم بارزين في مجالاتهم، سواء على مستوى معايير الجودة
+              المحلية،أوالعالمية، تحت شرط تحقيق المصداقية والاحترافية الكاملة.
+              نقدم محتوى أصليًا وحصريًا ومتميزًا لجماهيرنا أينما كانوا، من خلال
+              منصاتهم وقنواتهم المفضلة وشبكات التواصل، في مخرجات متنوعة من
+              مطبوعة ومنشورة إلى أنشطة وفعاليات واقعية. وبناءً على خبرتنا في
+              المحتوى وقدراتنا في مجال البيانات والتكنولوجيا، فإننا نستثمر
+              ونبتكر لتلبية طلبات الجمهور والتنبؤ بها، وللحفاظ على ريادتنا في
+              قطاع سريع التغير، وشديد الاحترافية في المملكة، حيث أننا نتعامل في
+              سوق الجميع فيه مميز، وبالتالي أردنا أن نكون أكثر تميزا، وأكثر قربا
+              من جمهورنا، وأكثر احترافية في تقديم منتجاتنا بما يتوافق مع رؤية
+              2030، نحن فريق كبير نعمل جاهدين على الخروج بمنتج نهائي "نجم" يتميز
+              عن كل ما سبق.
+            </p>
+          </div>
+          <a href="blogs.html" class="back">رجوع</a>
+        </div>
+      </div>
+      <!-- End Section -->
+    </div>
+    <!-- End Landing -->
+
+    <script src="js/main.js"></script>
+    <script>
+      window.onload = function(){
+        document
+            .querySelector(".story .container")
+            .classList.add("active");
+      }
+      window.onscroll = function () {
+        if (
+          window.scrollY >=
+          document.querySelector(".story .container .box .content").offsetTop -500
+        ) {
+          document
+            .querySelector(".story .container .box .content p")
+            .classList.add("active");
+        }
+      };
+    </script>
+  </body>
+</html>

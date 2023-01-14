@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/logo.png" />
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>نحن هنا</title>
+  </head>
+  <body>
+    <!-- Start Landing -->
+    <div class="story">
+      <div class="header">
+        <img src="images/bar.png" alt="" id="barIcon" />
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="index.html#howUs">من نحن</a></li>
+          <li><a href="index.html#clients">العملاء</a></li>
+          <li><a href="business.html">أعمالنا</a></li>
+          <li><a href="index.html#services">خدمات النجومية</a></li>
+          <li><a href="blogs.html" class="active">المقالات</a></li>
+          <li><a href="studies.html">الدراسات</a></li>
+          <li><a href="holfaa.html">حلفاؤنا</a></li>
+          <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+      </div>
+
+      <!-- Start Section -->
+      <div class="container">
+        <div class="box">
+          <h1>نحـن هنا</h1>
+          <div class="image">
+            <img src="images/contact-us-image.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h2>نحن هنا:</h2>
+            <p>
+              - حين تبحث عن مكان يجعلك بالصدارة ويجعل شركتك ومشروعك في المقدمة،
+              ويميزك في عالم النجومية، ويضع أهدافك في المقدمة ويبرزها على أرض
+              الواقع.
+            </p>
+
+            <p>
+              - نصنع خدماتنا بين يديك، لتقرر أنت الفرق، وتباشر منتجك النهائي
+              خطوة بخطوة من البداية حتى تصل إلى هدفك.
+            </p>
+
+            <p>- تثمن شركتنا قيم تحمل المسؤولية والنزاهة.</p>
+
+            <h2>الرسالة:</h2>
+            <p>
+              -هي السعي نحو تحقيق الإحتراف لنجوم مؤثرين على مستوى الأفراد
+              والشركات وفق أعلى المعايير العالمية، وأحدث التقنيات العصرية. وأن
+              نؤدي عملنا بتميز وإبداع ومسؤولية، ونستكمل دورنا في اكتشاف وصناعة
+              النجوم.
+            </p>
+          </div>
+          <a href="blogs.html" class="back">رجوع</a>
+        </div>
+      </div>
+      <!-- End Section -->
+    </div>
+    <!-- End Landing -->
+
+    <script src="js/main.js"></script>
+    <script>
+      window.onload = function(){
+        document.querySelector(".story .container").classList.add("active");
+      }
+      window.onscroll = function () {
+        let p = document.querySelectorAll(".story .container .box .content p");
+        if (
+          window.scrollY >=
+          document.querySelector(".story .container .box .content").offsetTop -
+            500
+        ) {
+          p.forEach((e) => {
+            e.classList.add("active");
+          });
+        }
+      };
+    </script>
+  </body>
+</html>

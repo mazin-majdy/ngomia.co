@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>حلفاؤنا</title>
+  </head>
+  <body>
+    <!-- Start Landing -->
+    <div class="story">
+      <div class="header">
+        <img src="images/bar.png" alt="" id="barIcon" />
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="index.html#howUs">من نحن</a></li>
+          <li><a href="index.html#clients">العملاء</a></li>
+          <li><a href="business.html">أعمالنا</a></li>
+          <li><a href="index.html#services">خدمات النجومية</a></li>
+          <li><a href="blogs.html">المقالات</a></li>
+          <li><a href="studies.html">الدراسات</a></li>
+          <li><a href="holfaa.html" class="active">حلفاؤنا</a></li>
+          <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+      </div>
+
+
+      <!-- Start Section -->
+      <div class="container">
+        <div class="box">
+          <h1>حلفاؤنا</h1>
+          <div class="image">
+            <img src="images/holafaa.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h2>أستديو أوكتاف<br>الرياض</h2>
+            
+            <h3>
+              استوديو أوكتاف للإنتاج الفني يقدم مجموعة من الخدمات الفنية المتكاملة منها:
+            </h3>
+            <p>
+              -تسجيل وانتاج أعمال فنية "شيلات وغيرها" بالتعاون حصريا مع نخبة من الموزعين المحترفين.
+            </p>
+            <p>
+              -فريق كورال احترافي"كزرال اوكتاف"
+            </p>
+            <p>
+              - فوكل بشري لجميع الأعمال
+            </p>
+            <p>
+              - تصميم ثابت للعمل HD
+            </p>
+            <p>
+              - مونتاج فيديو للأعمال HD
+            </p>
+            <p>
+              - نشر الأعمال مجانا في قناة اوكتاف علي اليوتيو- خدمة تنفيذ الأعمال في غضون 24 ساعة.
+            </p>
+          </div>
+          <a href="https://twitter.com/octave_studios/status/899726453125898241?s=48&t=zsfD-Ij_ewfqB6_RfGX_yQ" class="back" target="_blank">فكرة عن الاستديو من هنا</a>
+
+
+          
+          <div class="image" id="secondHolfaa">
+            <img src="images/taoos.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h2>منصة الطاووس</h2>
+            
+            <h3>
+              "هي منصة هدفها هو صناعة الشخصية المثالية لأولادنا، بالتعاون مع الخبراء التربويين، واهم المراجع العالمية" وتعتمد برامجها التدريبية على الآتي
+            </h3>
+            <p>
+              - شخصيات كرتونية سترافقكم في جميع الدورات.
+            </p>
+            <p>
+              - برامج تستهدف الأولاد وابنات في جميع مراحل التعليم العام.
+            </p>
+            <p>
+              - نركز على الأمثلة والمواقف الحياتية التي تعيشونها، ونستنبط منها العبر والدروس.
+            </p>
+            <h3>
+              -والبداية ستكون من خلال برنامج أنا مفكر، والذي يحتوي على خمس دورات تدريبية مهمة جدا لتنمية قدراتكم ومهاراتكم بالتفكير وتشمل خمس دورات:
+            </h3>
+            <p>
+              1-أنا مبدع.
+            </p>
+            <p>
+              2- كيف أفكر.
+            </p>
+            <p>
+              3-حل المشكلات.
+            </p>
+            <p>
+              4- القبعات الست.
+            </p>
+            <p>
+              5- أنا مفكر ناقد.
+            </p>
+          </div>
+          <a href="https://twitter.com/taoos_sa/status/1547602567672188930?s=48&t=zsfD-Ij_ewfqB6_RfGX_yQ" class="back" target="_blank">فكرة عن المنصة من هنا</a>
+
+          
+        </div>
+      </div>
+      <!-- End Section -->
+
+
+    </div>
+    <!-- End Landing -->
+
+    <script src="js/main.js"></script>
+    <script>
+      window.onscroll = function () {
+        let p = document.querySelectorAll(".story .container .box .content p");
+        if (
+          window.scrollY >=
+          document.querySelector(".story .container .box .content").offsetTop -
+            500
+        ) {
+          p.forEach((e) => {
+            e.classList.add("active");
+          });
+        }
+      };
+      
+      window.onload = function () {
+        let section = document.querySelector(".story .container");
+
+        section.classList.add("active");
+      };
+    
+    </script>
+  </body>
+</html>

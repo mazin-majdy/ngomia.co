@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/logo.png" />
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>الدراسات</title>
+  </head>
+  <body>
+    <!-- Start Landing -->
+    <div class="studies">
+      <div class="header">
+        <img src="images/bar.png" alt="" id="barIcon" />
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="index.html#howUs">من نحن</a></li>
+          <li><a href="index.html#clients">العملاء</a></li>
+          <li><a href="business.html">أعمالنا</a></li>
+          <li><a href="index.html#services">خدمات النجومية</a></li>
+          <li><a href="blogs.html">المقالات</a></li>
+          <li><a href="studies.html" class="active">الدراسات</a></li>
+          <li><a href="holfaa.html">حلفاؤنا</a></li>
+          <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+      </div>
+
+      <div class="container">
+        <div class="box">
+          <div class="img-holder">
+            <img src="images/marketing.png" alt="" />
+          </div>
+          <h2>التسويق بالمؤثرين</h2>
+          <p>
+            تأثير إعلانات المؤثرين في التسويق الرقمي على مواقع التواصل الاجتماعي
+            <br />(دراسة تحليلية)<br />
+            سعيد الحارثي<br />
+            يناير 2023م
+          </p>
+          <a
+            href="pdfFiles/التسويق بالمؤثرين.pdf"
+            download="التسويق بالمؤثرين.pdf"
+            target="_blank"
+            >المزيد</a
+          >
+        </div>
+        <div class="box">
+          <div class="img-holder">
+            <img src="images/social.png" alt="" />
+          </div>
+          <h2>من يحكم العالم عبر السوشيال ميديا</h2>
+          <p>
+            يعد الوصول إلى وسائل التواصل الاجتماعي قوة كبيرة, فمكانتك تتحدد في
+            هذا العالم بناء على عدد متابعيك, بل تختلف طبيعة هذه المكانة باختلاف
+            المنصة اتي تمتلك عليها متابعين.
+          </p>
+          <a
+            href="pdfFiles/من يحكم العالم عبر السوشيال ميديا.pdf"
+            download="من يحكم العالم عبر السوشيال ميديا.pdf"
+            target="_blank"
+            >المزيد</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- End Landing -->
+
+    <script src="js/main.js"></script>
+    <script>
+      window.onload = function () {
+        let section = document.querySelector(".studies .container");
+
+        section.classList.add("active");
+      };
+    </script>
+  </body>
+</html>
