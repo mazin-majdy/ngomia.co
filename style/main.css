@@ -70,6 +70,12 @@ a {
     height: 720px;
 }
 
+@media (max-width: 767px) {
+    .landing {
+        height: 893px;
+    }
+}
+
 .header {
     width: 80%;
     padding-left: 100px;
@@ -251,12 +257,6 @@ a {
     }
 }
 
-@media(max-width: 767px) {
-    .ngomia {
-        padding-right: 50px;
-        padding-left: 50px;
-    }
-}
 
 .ngomia .content {
     width: 525px;
@@ -272,6 +272,17 @@ a {
     font-size: 28px;
     color: #FCFCFC;
     text-align: justify;
+}
+
+@media(max-width: 767px) {
+    .ngomia {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .ngomia .content h1 {
+        font-size: 44px;
+    }
 }
 
 /* End Ngomia Section */
@@ -1369,42 +1380,49 @@ a {
     background-color: rgba(0 0 0 / 65%);
 }
 
-.contact .container .content p{
+.contact .container .content p {
     color: #FFF;
     line-height: 1.7;
     font-size: 20px;
     text-align: justify;
     margin-bottom: 100px;
 }
-.contact .data{
+
+.contact .data {
     display: flex;
     justify-content: space-between;
 }
-.contact .info h1{
+
+.contact .info h1 {
     margin-top: 0;
 }
-.contact .info .en{
+
+.contact .info .en {
     text-align: left;
     direction: ltr;
 }
-.contact .info .en i{
+
+.contact .info .en i {
     color: var(--main-color);
     font-size: 20px;
     margin-right: 5px;
 }
-.contact .info .en p{
+
+.contact .info .en p {
     display: inline-block;
     color: #FFF;
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 10px;
 }
-.contact .links{
+
+.contact .links {
     margin: 80px auto;
     display: flex;
     justify-content: space-around;
 }
-.contact .links a{
+
+.contact .links a {
     font-size: 30px;
     color: #EEE;
     transition: 0.3s;
@@ -1413,10 +1431,12 @@ a {
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
 }
-.contact .links a:hover{
+
+.contact .links a:hover {
     color: var(--main-color);
 }
-.contact iframe{
+
+.contact iframe {
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -1428,25 +1448,29 @@ a {
 }
 
 @media (max-width: 1200px) {
-    .contact iframe{
+    .contact iframe {
         width: 400px;
         height: 200px;
     }
 }
-@media (max-width: 991px){
-    .contact .data{
+
+@media (max-width: 991px) {
+    .contact .data {
         flex-direction: column;
         text-align: center;
     }
-    .contact .data .en{
+
+    .contact .data .en {
         text-align: center;
         margin: 0 auto;
     }
-    .contact iframe{
+
+    .contact iframe {
         width: 350px;
         height: 200px;
     }
 }
+
 /* End Contact */
 
 /* Start Animation */
@@ -1536,3 +1560,83 @@ a {
 }
 
 /* End Animation */
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.backk {
+    background: #2C2C2E;
+    padding: 20em auto;
+    font-family: "Roboto";
+    direction: ltr;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100000;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    opacity: 1;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.backk span {
+    font-size: 3em;
+    color: var(--main-color);
+    background: #555;
+    display: table-cell;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3), 0 5px 0 #ccc;
+    padding: 0 15px;
+    line-height: 100px;
+    animation: jumb 2s infinite;
+}
+
+@keyframes jumb {
+    0% {
+        transform: translateY(0px)
+    }
+
+    50% {
+        transform: translateY(-30px);
+        box-shadow: 0 15px 0 var(--main-color);
+    }
+
+    100% {
+        transform: translateY(0px)
+    }
+}
+
+.backk span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.backk span:nth-child(2) {
+    animation-delay: .1s;
+}
+
+.backk span:nth-child(3) {
+    animation-delay: .2s;
+}
+
+.backk span:nth-child(4) {
+    animation-delay: .3s;
+}
+
+.backk span:nth-child(5) {
+    animation-delay: .4s;
+}
+
+.backk span:nth-child(6) {
+    animation-delay: .5s;
+}
+
+.backk span:nth-child(7) {
+    animation-delay: .6s;
+}

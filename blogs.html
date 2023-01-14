@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="shortcut icon" href="images/logo.png" />
     <link rel="stylesheet" href="style/normalize.css" />
     <link rel="stylesheet" href="style/main.css" />
     <link
@@ -16,6 +16,15 @@
   <body>
     <!-- Start Landing -->
     <div class="blogs">
+      <span class="backk">
+        <span>L</span>
+        <span>o</span>
+        <span>a</span>
+        <span>d</span>
+        <span>i</span>
+        <span>n</span>
+        <span>g</span>
+      </span>
       <div class="header">
         <img src="images/bar.png" alt="" id="barIcon" />
         <ul>
@@ -38,8 +47,9 @@
           </div>
           <h2>قصتنا</h2>
           <p>
-            الشغف، الفرصة، النجومية..<br> النجومية هي "فرصة" ربما تحصل عليها مرة في
-            العمر، ولكن، مالذي يجعل من الشخص العادي "نجماً"
+            الشغف، الفرصة، النجومية..<br />
+            النجومية هي "فرصة" ربما تحصل عليها مرة في العمر، ولكن، مالذي يجعل من
+            الشخص العادي "نجماً"
           </p>
           <a href="story.html">المزيد</a>
         </div>
@@ -74,8 +84,20 @@
       window.onload = function () {
         let section = document.querySelector(".blogs .container");
 
-          section.classList.add("active");
-        
+        section.classList.add("active");
+      };
+      // Loading Page
+      document.onreadystatechange = function () {
+        if (document.readyState !== "complete") {
+          document.querySelector(".backk").style.opacity = "1";
+          document.body.style.overflow = "hidden";
+        } else {
+          document.querySelector(".backk").style.opacity = "0";
+          document.body.style.overflow = "auto";
+          setTimeout(() => {
+            document.querySelector(".backk").style.display = "none";
+          }, 100);
+        }
       };
     </script>
   </body>

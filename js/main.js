@@ -46,11 +46,11 @@ window.onscroll = function () {
     started2 = true;
   }
 
-  
-    let clientsSection = document.querySelector(".clients ");
-    if (window.scrollY >= clientsSection.offsetTop - 400) {
-      clientsSection.classList.add("active");
-    }
+
+  let clientsSection = document.querySelector(".clients ");
+  if (window.scrollY >= clientsSection.offsetTop - 400) {
+    clientsSection.classList.add("active");
+  }
 
 
 }
@@ -72,7 +72,8 @@ let spanText = document.querySelector(".landing .content span").dataset.text;
 let span = document.getElementById("span");
 let x = 0;
 let y = 0;
-let writeSpan = function () {
+
+function writeSpan() {
   let fun2 = setInterval(() => {
 
     span.textContent += spanText[x];
@@ -84,6 +85,8 @@ let writeSpan = function () {
   }, 50);
 
 }
+
+writeSpan()
 
 let writeHeader = function () {
   let fun3 = setInterval(() => {
@@ -98,7 +101,21 @@ let writeHeader = function () {
 
 }
 
-  writeSpan();
-  setTimeout(writeHeader, 1700);
+setTimeout(writeHeader, 2500);
 
 //****************************************************** */
+
+
+// Loading Page
+document.onreadystatechange = function () {
+  if (document.readyState !== "complete") {
+    document.querySelector(".backk").style.opacity = "1";
+    document.body.style.overflow = "hidden";
+  } else {
+    document.querySelector(".backk").style.opacity = "0";
+    document.body.style.overflow = "auto";
+    setTimeout(() => {
+      document.querySelector(".backk").style.display = "none";
+    }, 100);
+  }
+};
