@@ -48,7 +48,7 @@ window.onscroll = function () {
 
 
   let clientsSection = document.querySelector(".clients ");
-  if (window.scrollY >= clientsSection.offsetTop - 400) {
+  if (window.scrollY >= clientsSection.offsetTop - 300) {
     clientsSection.classList.add("active");
   }
 
