@@ -48,7 +48,7 @@ window.onscroll = function () {
 
 
   let clientsSection = document.querySelector(".clients ");
-  if (window.scrollY >= clientsSection.offsetTop - 300) {
+  if (window.scrollY >= clientsSection.offsetTop - 250) {
     clientsSection.classList.add("active");
   }
 
@@ -86,7 +86,7 @@ function writeSpan() {
 
 }
 
-writeSpan()
+
 
 let writeHeader = function () {
   let fun3 = setInterval(() => {
@@ -101,7 +101,6 @@ let writeHeader = function () {
 
 }
 
-setTimeout(writeHeader, 2500);
 
 //****************************************************** */
 
@@ -112,6 +111,9 @@ document.onreadystatechange = function () {
     document.querySelector(".backk").style.opacity = "1";
     document.body.style.overflow = "hidden";
   } else {
+    writeSpan()
+    setTimeout(writeHeader, 2500);
+
     document.querySelector(".backk").style.opacity = "0";
     document.body.style.overflow = "auto";
     setTimeout(() => {

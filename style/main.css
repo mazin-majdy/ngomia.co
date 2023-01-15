@@ -17,7 +17,7 @@ html {
 
 @font-face {
     font-family: saudia;
-    src: url(../Fonts/Hacen\ Saudi\ Arabia.ttf);
+    src: url(./../Fonts/HacenSaudiArabia.ttf);
 }
 
 body {
@@ -67,7 +67,7 @@ a {
     background-image: url("../images/landing.png");
     background-size: cover;
     background-attachment: fixed;
-    height: 720px;
+    height: 100vh;
 }
 
 @media (max-width: 767px) {
@@ -471,14 +471,14 @@ a {
 .bodcast {
     background-image: url("../images/bodcast.png");
     background-size: cover;
-    height: 720px;
+    height: 100vh;
     padding: 50px 100px;
 }
 
 .bodcast h1 {
     color: var(--main-color);
     font-size: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 }
 
 .bodcast .text {
@@ -517,7 +517,7 @@ a {
     }
 
     .bodcast h1 {
-        margin-bottom: 17px;
+        margin-bottom: 35px;
     }
 
     .bodcast .text h2 {
@@ -553,6 +553,21 @@ a {
     }
 }
 
+@media (max-width: 1300px) {
+    .bodcast h1 {
+        margin-bottom: 10px;
+    }
+}
+@media (min-width: 1400px) {
+    .bodcast h1 {
+        margin-bottom: 35px;
+    }
+}
+@media (min-width: 1500px) {
+    .bodcast h1 {
+        margin-bottom: 45px;
+    }
+}
 
 /* End Bodcast */
 
@@ -585,7 +600,7 @@ a {
     -webkit-animation: moveUp 3s infinite ease;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1300px) {
     .services::after {
         display: none;
     }
@@ -594,7 +609,67 @@ a {
         display: none;
     }
 }
+@media (min-width: 1301px){
+    .services::after {
+        right: 0;
+    }
 
+    .services #led {
+        right: -190px;
+    }
+}
+
+@media (min-width: 1360px){
+    .services::after {
+        right: 50px;
+    }
+
+    .services #led {
+        right: -150px;
+    }
+}
+@media (min-width: 1390px){
+    .services #led {
+        right: -120px;
+    }
+}
+@media (min-width: 1420px){
+    .services::after {
+        right: 100px;
+    }
+    .services #led {
+        right: -80px;
+    }
+}
+@media (min-width: 1450px){
+    .services #led {
+        right: -53px;
+    }
+}
+@media (min-width: 1478px){
+    .services::after {
+        right: 140px;
+    }
+    .services #led {
+        right: -41px;
+    }
+}
+@media (min-width: 1490px){
+    .services::after {
+        right: 170px;
+    }
+    .services #led {
+        right: -11px;
+    }
+}
+@media (min-width: 1505px){
+    .services::after {
+        right: 200px;
+    }
+    .services #led {
+        right: 15px;
+    }
+}
 .services .content {
     display: flex;
     flex-direction: column;
@@ -762,6 +837,41 @@ a {
         width: 350px;
     }
 }
+@media (min-width: 1401px) {
+    .identity{
+        padding-right: 80px;
+    }
+}
+@media (min-width: 1420px) {
+    .identity{
+        padding-right: 100px;
+    }
+}
+@media (min-width: 1440px) {
+    .identity{
+        padding-right: 120px;
+    }
+}
+@media (min-width: 1460px) {
+    .identity{
+        padding-right: 140px;
+    }
+}
+@media (min-width: 1480px) {
+    .identity{
+        padding-right: 160px;
+    }
+}
+@media (min-width: 1500px) {
+    .identity{
+        padding-right: 180px;
+    }
+}
+@media (min-width: 1520px) {
+    .identity{
+        padding-right: 215px;
+    }
+}
 
 
 /* End identity */
@@ -778,11 +888,11 @@ a {
     -moz-transition: 0.6s;
     -ms-transition: 0.6s;
     -o-transition: 0.6s;
-    transform: translateY(300px);
-    -webkit-transform: translateY(300px);
-    -moz-transform: translateY(300px);
-    -ms-transform: translateY(300px);
-    -o-transform: translateY(300px);
+    transform: translateY(100px);
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    -o-transform: translateY(100px);
 }
 
 .clients.active {
@@ -1083,11 +1193,11 @@ footer .links a:hover {
     -ms-transition: 0.6s;
     -o-transition: 0.6s;
     opacity: 0.5;
-    transform: translateY(300px);
-    -webkit-transform: translateY(300px);
-    -moz-transform: translateY(300px);
-    -ms-transform: translateY(300px);
-    -o-transform: translateY(300px);
+    transform: translateY(100px);
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    -o-transform: translateY(100px);
 }
 
 .business .container.active,
@@ -1323,11 +1433,11 @@ footer .links a:hover {
     -moz-transition: 0.6s;
     -ms-transition: 0.6s;
     -o-transition: 0.6s;
-    transform: translateY(300px);
-    -webkit-transform: translateY(300px);
-    -moz-transform: translateY(300px);
-    -ms-transform: translateY(300px);
-    -o-transform: translateY(300px);
+    transform: translateY(100px);
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    -o-transform: translateY(100px);
 }
 
 .gallery .container .galleryImages.active {
