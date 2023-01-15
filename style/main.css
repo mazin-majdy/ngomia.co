@@ -845,6 +845,37 @@ a {
 
 /* End Clients */
 
+
+/* Start Footer */
+footer{
+    background-color: #2C2C2D;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #FFF;
+}
+footer .links {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    padding: 10px;
+}
+footer .links a {
+    font-size: 30px;
+    color: #EEE;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+footer .links a:hover {
+    color: var(--main-color);
+}
+/* End Footer */
 /* Start Blogs */
 .blogs,
 .studies {
