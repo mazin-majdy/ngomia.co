@@ -994,7 +994,10 @@ a {
     color: var(--main-color);
     margin-bottom: 50px;
 }
-
+.landingContact .data p{
+    color: #EEE;
+    margin-bottom: 20px;
+}
 .landingContact .links {
     margin: 80px auto;
     display: flex;
