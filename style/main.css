@@ -994,6 +994,24 @@ a {
     color: var(--main-color);
     margin-bottom: 50px;
 }
+.landingContact .info .en {
+    direction: ltr;
+    text-align: center;
+}
+
+.landingContact .info .en i {
+    color: var(--main-color);
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.landingContact .info .en p {
+    display: inline-block;
+    color: #FFF;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+}
 .landingContact .data p{
     color: #EEE;
     margin-bottom: 20px;
@@ -1630,25 +1648,6 @@ footer .text{
 
 .contact .info h1 {
     margin-top: 0;
-}
-
-.contact .info .en {
-    direction: ltr;
-    text-align: center;
-}
-
-.contact .info .en i {
-    color: var(--main-color);
-    font-size: 20px;
-    margin-right: 5px;
-}
-
-.contact .info .en p {
-    display: inline-block;
-    color: #FFF;
-    font-size: 22px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 10px;
 }
 
 .contact .links {
